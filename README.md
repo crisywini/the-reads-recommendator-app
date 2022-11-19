@@ -10,3 +10,19 @@ and execute this command:
 
 
 which will create a QR code that you should scan using the Expo Go app and that will automatically run this amazing gorgeous app
+
+
+would be amazing if you help this project.
+
+
+if you want you can create your branches like this: 
+
+* improvement/*general-description* 
+* bugfix-*UI*/*general-description*
+* bugfix-*BE*/*general-description*
+* feature/*general-description*
+
+improvements are for some things I have made that may not work the best it could be. 
+Feature is for new things that you would like to see. Bugfix is for solving bugs 🐞🪲. 
+
+
