@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import {View, Text, Alert} from "react-native";
 import { TouchableOpacity, Button } from "react-native";
 import { useNavigation } from "@react-navigation/native";
@@ -45,8 +46,22 @@ const HomeScreen = () =>{
     )
 }
 
+
 function onPressPickABook() {
-    Alert.alert("Book recommended! 😛");
+
+    const apiKey = "";
+
+    var query = "javascript";
+    var url = "https://www.googleapis.com/books/v1/volumes?q="+query+":keyes&key="+apiKey+"&maxResults=5";
+     
+    fetch(url)
+            .then(response => response.json())
+            .then((result) => {
+                console.log(result["items"]);
+            }, 
+            (error) => {
+                console.error(error);
+            })
 }
 
 export default HomeScreen;
